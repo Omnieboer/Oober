@@ -1,17 +1,11 @@
-pluginManagement {
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
-        jcenter()
-        gradlePluginPortal()
         mavenCentral()
-        maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
+        jcenter() // Warning: this repository is going to shut down soon
     }
-    
 }
 rootProject.name = "Oober"
-
-
-include(":android")
-include(":desktop")
-include(":common")
-
+include(":app")
+ 
